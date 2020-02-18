@@ -99,7 +99,7 @@
 .wheel img {
     width: 57px;
     height: 57px;
-    animation: wheel 0.8s linear infinite;
+    animation: wheel 1.5s linear infinite;
 }
 
 .back-wheel {
@@ -130,22 +130,22 @@
 
 .car2 img {
     width: 100%;
-    animation: car2 40s linear infinite;
+    animation: car2 25s linear infinite;
 }
 
 .wheel2 {
     left: 110%;
     bottom: 108px;
-    transform: translateX(-50%);
+    transform: translateX(-150%);
     position: absolute;
     z-index: 2;
-    animation: car2 40s linear infinite;
+    animation: car2 25s linear infinite;
 }
 
 .wheel2 img {
     width: 63px;
     height: 63px;
-    animation: wheel 1.5s linear infinite;
+    animation: wheel 0.8s linear infinite;
 }
 
 .back-wheel2 {
@@ -159,8 +159,12 @@
 }
 
 @keyframes car2 {
+    0% {
+        transform: translateX(-1200px);
+    }
+
     100% {
-        transform: translateX(-1400px);
+        transform: translateX(100px);
     }
 }
 
