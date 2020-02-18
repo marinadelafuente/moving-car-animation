@@ -99,6 +99,7 @@
 .wheel img {
     width: 57px;
     height: 57px;
+    animation: wheel 0.8s linear infinite;
 }
 
 .back-wheel {
@@ -109,6 +110,12 @@
 .front-wheel {
     left: 63px;
     position: absolute;
+}
+
+@keyframes wheel {
+    100% {
+        transform: rotate(360deg);
+    }
 }
 
 
@@ -138,6 +145,7 @@
 .wheel2 img {
     width: 63px;
     height: 63px;
+    animation: wheel 1.5s linear infinite;
 }
 
 .back-wheel2 {
@@ -177,11 +185,11 @@
     }
 
     .back-wheel {
-        left: -113px;
+        left: -114px;
     }
 
     .front-wheel {
-        left: 70px;
+        left: 68px;
     }
 
     .wheel2 {
@@ -189,15 +197,15 @@
     }
 
     .wheel2 img {
-        width: 62px;
-        height: 62px;
+        width: 63px;
+        height: 63px;
     }
 
     .back-wheel2 {
-        left: -140px;
+        left: -141px;
     }
 
     .front-wheel2 {
-        left: 68px;
+        left: 67px;
     }
 }
