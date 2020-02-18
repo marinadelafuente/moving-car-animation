@@ -16,7 +16,7 @@
 
 .highway {
     height: 200px;
-    width: 500%;
+    width: 1500%;
     display: block;
     background-image: url(road.jpg);
     position: absolute;
@@ -102,12 +102,12 @@
 }
 
 .back-wheel {
-    left: -113px;
+    left: -121px;
     position: absolute;
 }
 
 .front-wheel {
-    left: 70px;
+    left: 63px;
     position: absolute;
 }
 
@@ -128,7 +128,7 @@
 
 .wheel2 {
     left: 110%;
-    bottom: 107px;
+    bottom: 108px;
     transform: translateX(-50%);
     position: absolute;
     z-index: 2;
@@ -136,22 +136,68 @@
 }
 
 .wheel2 img {
-    width: 62px;
-    height: 62px;
+    width: 63px;
+    height: 63px;
 }
 
 .back-wheel2 {
-    left: -140px;
+    left: -141px;
     position: absolute;
 }
 
 .front-wheel2 {
-    left: 68px;
+    left: 67px;
     position: absolute;
 }
 
 @keyframes car2 {
     100% {
         transform: translateX(-1400px);
+    }
+}
+
+
+@media all and (min-width: 768px) {
+
+    .highway {
+        width: 500%;
+    }
+
+    .wheel {
+        left: 49%;
+        bottom: 184px;
+        transform: translateX(-50%);
+        position: absolute;
+        z-index: 2;
+    }
+
+    .wheel img {
+        width: 57px;
+        height: 57px;
+    }
+
+    .back-wheel {
+        left: -113px;
+    }
+
+    .front-wheel {
+        left: 70px;
+    }
+
+    .wheel2 {
+        bottom: 107px;
+    }
+
+    .wheel2 img {
+        width: 62px;
+        height: 62px;
+    }
+
+    .back-wheel2 {
+        left: -140px;
+    }
+
+    .front-wheel2 {
+        left: 68px;
     }
 }
